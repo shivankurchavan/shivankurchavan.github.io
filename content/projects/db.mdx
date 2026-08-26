@@ -1,0 +1,45 @@
+---
+title: "Database Performance Investigation"
+
+slug: "database-performance-investigation"
+
+date: "2026-08-26"
+
+description: "Investigating and improving database performance in a system processing approximately 76,000 transactions."
+
+tags:
+  - PostgreSQL
+  - Performance
+  - P99 Latency
+  - Observability
+
+featured: true
+---
+
+## The problem
+
+The system was processing a significant number of transactions and P99 latency was reaching approximately 400–500ms.
+
+The challenge was understanding whether the issue came from queries, contention, infrastructure or workload behavior.
+
+## Investigation
+
+We started by collecting metrics and identifying patterns rather than immediately changing queries.
+
+This helped narrow the search space.
+
+## Changes
+
+Several smaller changes were introduced and the results were observed over time.
+
+Interestingly, the improvement wasn't immediate.
+
+Latency gradually improved over several hours.
+
+## Result
+
+The final system showed significantly better tail latency while maintaining throughput.
+
+## What I learned
+
+Performance work is often less about finding a single magic optimization and more about systematically understanding the system.
