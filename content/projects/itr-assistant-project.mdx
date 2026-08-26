@@ -1,0 +1,128 @@
+---
+title: "ITR Assistant"
+
+slug: "itr-assistant"
+
+date: "2025-10-07"
+
+description: "ITR filling assistant for coin-ed-dcx PnLs"
+
+tags:
+  - Income Tax Returns  
+  - AI Assistant
+
+featured: true
+---
+
+## Story Time: Filing Crypto Taxes with CoinDCX
+
+I got a call from my CA asking for the **PnL statement** for my crypto account with **CoinDCX**. I thought it'd take **5–10 minutes** to get it from the app and send the report.  
+
+It took me **4 days**.  
+
+Not only was my precious time wasted, this all happened during the **Ganpati festival**, so I had to miss one of the rituals just to file taxes with my CA.  
+
+
+![Sneak Peek](/images/projects/itr-assistant/1pic.png)
+
+
+### What was the Problem?
+
+CoinDCX doesn't provide the PnL statement right away.  
+Instead, they redirect you to **KoinX**, which is a **paid service**, essentially forcing you into a subscription.  
+
+Basically, they want to **squeez in money for something that should be free**.  
+
+They do have a trade ledger, so if you want, you can manually decode the PnL from that.  
+
+
+
+### The Instant Order Ledger (10 Columns):
+| Trade ID | Crypto | Trade Completion Time | Side | Avg Price (INR) | Quantity | Gross (INR) | Fees (INR) | Net (INR) | TDS (INR) |
+|:--------:|:------:|:---------------------:|:----:|----------------:|---------:|------------:|-----------:|----------:|----------:|
+
+My *engineer gene* kicked in.  
+“How hard can it be?” I thought, and started making my own PnL sheet.  
+
+Turns out, it's hard. It's not exactly *hard-hard*, but **tedious-hard**.  
+
+
+### CA’s Format
+
+My CA sent me a format of the column he wanted.  
+
+| Particulars | Date of Purchase | Date of Transfer | Sale Consideration | Cost of Acquisition | Income (loss ignored) |
+|-------------|------------------|------------------|--------------------|---------------------|-----------------------|
+
+
+I copy-pasted the values (without averaging or using any proper technique) and sent them to him.  
+- He gave a review (but didn’t mention **FIFO method**).  
+- I updated the sheet and sent it again.  
+
+This time I used the **Averaging Method** (average the price of all the shares bought before the sell trade).  
+
+This process took **2 days**.  
+
+But… he was still unsatisfied.  
+
+After some back and forth, he mentioned the **FIFO method**.  
+
+> 💡 **Fact Box: FIFO Method**  
+>   
+> Let’s say you have 3 trades:  
+> 1. **Buy** → 100 shares → ₹10/share  
+> 2. **Buy** → 200 shares → ₹20/share  
+> 3. **Sell** → 150 shares → ₹15/share  
+>   
+> When the 3rd trade is executed:  
+> - First, the 100 shares of Order 1 are sold  
+> - Then, 50 shares from Order 2  
+>   
+> **Profit calculation:**  
+> ```
+> 100 * (15 - 10) + 50 * (15 - 20) = 250
+> ```
+>   
+> Profit = **₹250**
+
+The result was satisfactory. It didn't take much brains to implement the method but it was tedious and a long process. 
+
+### Lessons Learned
+
+After going through all this, it was clear:  
+- This is just a **computation task**.  
+- No AI needed, only some **logic + basics**.  
+
+
+### Building an App to Automate It 
+
+To make my life easier for the next quarter, I built an **App**.  
+
+- **Backend:** I implemented the logic to parse CoinDCX’s *instant trades* Excel file.  
+- **Frontend:** Used BOLT.new to quickly design the UI.  
+
+🔗 [Check it out here](https://coineddcx-itr-assistant.netlify.app/)
+, you can also try pasting https://coineddcx-itr-assistant.netlify.app/ in yourt browser. 
+
+
+> ### Backend Explanation
+>
+> The CoinDCX instant trade Excel file had **2 sheets**.  
+> - Sheet 2 (`instant trades`) was the one required.  
+> 
+> Steps I followed:  
+> 1. Identify the **Trade ID** in the first column.  
+> 2. Select the next 10 columns for operations.  
+> 3. Group trades by crypto symbols.  
+> 4. Pass these grouped trades to `processExcelData`.  
+> 
+> Inside `processExcelData`:  
+> - Split the trades into **Buy** and **Sell** orders.  
+> - Use the Sell orders to deduct the number of tokens from the Buy orders accordingly.  
+> 
+ 
+## Final Thoughts
+
+Yeah, that’s about it.  
+A **tedious but solvable problem** → now automated into a tool.  
+Next time my CA calls, it’ll actually take **5 minutes**, not 4 days.
