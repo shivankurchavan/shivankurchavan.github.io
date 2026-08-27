@@ -16,18 +16,21 @@ export default function AboutPage() {
 
       <div className="about-content">
 
-        <p>
-          hi, I'm Shivankur, i love to eat.
+        <p className="py-5">
+        I like to eat food, a lot of it. "bakasur" is somewhat of proper term for my condition. I enjoy different flavours and by god's grace I also posess enough judgement quotient to judge food on different parameteres.
         </p>
 
-        
+        <p>
+        My favorite genere would be where i get something handy and flavourful, sandwiches basically, but not limited to it.  
+        </p>
+
         <video 
           autoPlay
           muted
           loop
           playsInline
           width="100%" 
-          src="/videos/video1.mp4" 
+          src="/videos/video4.mov" 
           className="video"
         >
           Your browser does not support the video tag.

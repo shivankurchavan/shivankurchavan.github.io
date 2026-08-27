@@ -188,7 +188,7 @@ a {
 
   gap: 16px;
 
-  font-size: 13px;
+  font-size: 17px;
 
   color: var(--muted);
 }
@@ -548,7 +548,7 @@ a {
 }
 
 .about-content {
-  max-width: 650px;
+  max-width: 1200px;
 
   font-size: 20px;
 

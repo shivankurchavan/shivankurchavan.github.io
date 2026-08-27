@@ -238,9 +238,25 @@ export default function Sidebar({
           target="_blank"
           rel="noopener noreferrer"
         >
-          GitHub
+          [GitHub]
         </a>
 
+
+        {/* <a>|</a> */}
+
+        <a
+          href="https://linkedin.com/in/shivankurchavan"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          [LinkedIn]
+        </a>
+
+        <a
+        href="mailto:shivankurchavan@gmail.com"
+        >
+          [Email]
+        </a>
       </div>
 
     </aside>
