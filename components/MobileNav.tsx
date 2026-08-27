@@ -21,8 +21,8 @@ export default function MobileNav() {
           Writing
         </Link>
 
-        <Link href="/thoughts">
-          Thoughts
+        <Link href="/about">
+          About
         </Link>
 
       </div>

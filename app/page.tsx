@@ -35,21 +35,22 @@ export default function HomePage() {
           what I learn along the way.
         </h1>
 
-        <p className="hero-description text-black-800 ">
+        <p className="hero-description">
           I'm Shivankur — a developer interested in systems, interesting problems and also in the things that happen outside the terminal. 
 
         </p>
 
-        <p className="hero-description font-bold ">
+        <p className="hero-description ">
           I train for endurance events and my weekends are spent with BeachPlease
 
         </p>
 
         <p className="hero-description">
-          I also like to eat various cusisines, i dont descriminate b/w street food and michelin star course meal (not that ive had one yet, lol)
+          I also like to eat various cuisines, i dont descriminate b/w street food and michelin star course meal (not that ive had one yet, lol)
 
         </p>
 
+        
       </section>
 
       {/* <section>

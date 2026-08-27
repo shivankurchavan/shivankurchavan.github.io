@@ -17,24 +17,22 @@ export default function AboutPage() {
       <div className="about-content">
 
         <p>
-          I'm Shivankur, a developer
-          who enjoys working on
-          interesting technical problems.
+          hi, I'm Shivankur, i love to eat.
         </p>
 
-        <p>
-          I'm particularly interested in
-          systems, performance,
-          infrastructure and understanding
-          how things work underneath.
-        </p>
+        
+        <video 
+          autoPlay
+          muted
+          loop
+          playsInline
+          width="100%" 
+          src="/videos/video1.mp4" 
+          className="video"
+        >
+          Your browser does not support the video tag.
+        </video>   
 
-        <p>
-          This website is where I document
-          projects, technical investigations
-          and thoughts that I find worth
-          keeping around.
-        </p>
 
       </div>
 

@@ -100,7 +100,7 @@ a {
 }
 
 .navigation a.sidebar-post {
-  font-size: 12px;
+  font-size: 16px;
 
   line-height: 1.4;
 
@@ -173,7 +173,7 @@ a {
 }
 
 .navigation a {
-  font-size: 14px;
+  font-size: 16px;
 
   transition:
     opacity 0.2s ease;
@@ -197,7 +197,7 @@ a {
   grid-column: 2;
 
   padding:
-    96px
+    40px
     64px;
 }
 
@@ -210,13 +210,18 @@ a {
 }
 
 .hero {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
+}
+
+.video{
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .eyebrow {
   color: var(--muted);
 
-  font-size: 11px;
+  font-size: 21px;
 
   font-weight: 700;
 
@@ -248,9 +253,9 @@ a {
 
   margin-top: 28px;
 
-  color: var(--muted);
+  color: var(--foreground);
 
-  font-size: 18px;
+  font-size: 20px;
 
   line-height: 1.7;
 }
@@ -444,6 +449,7 @@ a {
     1px solid var(--border);
 
   padding-top: 48px;
+  padding-bottom: 0px;
 }
 
 .now-grid {
@@ -697,7 +703,7 @@ a {
 /* ARTICLES BUTTON */
 
 .dropdown-button {
-  font-size: 11px;
+  font-size: 18px;
 
   font-weight: 700;
 
@@ -734,7 +740,7 @@ a {
 .category-button {
   padding: 5px 0;
 
-  font-size: 12px;
+  font-size: 15px;
 
   color: var(--muted);
 }
@@ -771,7 +777,7 @@ a {
 
   color: var(--muted);
 
-  font-size: 11px;
+  font-size: 15px;
 
   line-height: 1.4;
 
