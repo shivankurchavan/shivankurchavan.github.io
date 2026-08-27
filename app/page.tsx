@@ -40,7 +40,7 @@ export default function HomePage() {
 
         </p>
 
-        <p className="hero-description">
+        <p className="hero-description font-bold ">
           I train for endurance events and my weekends are spent with BeachPlease
 
         </p>
