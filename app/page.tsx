@@ -46,7 +46,7 @@ export default function HomePage() {
         </p>
 
         <p className="hero-description">
-          I also like to eat various cusisines, i dont descriminate b/w street food and michilin star course meal (not that ive had one yet, lol)
+          I also like to eat various cusisines, i dont descriminate b/w street food and michelin star course meal (not that ive had one yet, lol)
 
         </p>
 
