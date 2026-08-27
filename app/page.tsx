@@ -35,17 +35,24 @@ export default function HomePage() {
           what I learn along the way.
         </h1>
 
+        <p className="hero-description text-black-800 ">
+          I'm Shivankur — a developer interested in systems, interesting problems and also in the things that happen outside the terminal. 
+
+        </p>
+
         <p className="hero-description">
-          I'm Shivankur — a developer
-          interested in systems,
-          performance, interesting problems
-          and occasionally the things that
-          happen outside the terminal.
+          I train for endurance events and my weekends are spent with BeachPlease
+
+        </p>
+
+        <p className="hero-description">
+          I also like to eat various cusisines, i dont descriminate b/w street food and michilin star course meal (not that ive had one yet, lol)
+
         </p>
 
       </section>
 
-      <section>
+      {/* <section>
 
         <SectionHeading
           title="FEATURED WORK"
@@ -65,9 +72,9 @@ export default function HomePage() {
 
         </div>
 
-      </section>
+      </section> */}
 
-      <section>
+      {/* <section>
 
         <SectionHeading
           title="RECENT WRITING"
@@ -87,9 +94,9 @@ export default function HomePage() {
 
         </div>
 
-      </section>
+      </section> */}
 
-      <section>
+      {/* <section>
 
         <SectionHeading
           title="RECENT THOUGHTS"
@@ -109,7 +116,7 @@ export default function HomePage() {
 
         </div>
 
-      </section>
+      </section> */}
 
       <section className="now-section">
 
@@ -117,23 +124,21 @@ export default function HomePage() {
           NOW
         </p>
 
-        <div className="now-grid">
+        <div className="now-grid ">
 
           <div>
             <span>Building</span>
 
             <p>
-              Things that solve
-              interesting problems.
+              This blog page 
             </p>
           </div>
 
           <div>
-            <span>Learning</span>
+            <span>Enduring</span>
 
             <p>
-              More about systems and
-              performance.
+              Ironman 70.3 Goa training
             </p>
           </div>
 
@@ -141,8 +146,7 @@ export default function HomePage() {
             <span>Thinking</span>
 
             <p>
-              How to build simpler,
-              better software.
+              How could chia seeds make me sh#t better....
             </p>
           </div>
 
