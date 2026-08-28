@@ -40,6 +40,8 @@ export default function HomePage() {
 
         </p>
 
+        <img src="/images/image1.png" alt="Description of image" className="profile-image"></img>  
+
         <p className="hero-description ">
           I train for endurance events and my weekends are spent with BeachPlease
 

@@ -792,3 +792,15 @@ a {
   transform:
     translateX(3px);
 }
+
+
+
+
+
+
+
+/* some self declaired classes */
+
+.profile-image {
+  padding-top: 20px;
+}
