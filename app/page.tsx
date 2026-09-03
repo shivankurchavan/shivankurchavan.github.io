@@ -32,7 +32,7 @@ export default function HomePage() {
 
         <h1>
           I build things and write about
-          what I learn along the way.
+          what I learn.
         </h1>
 
         <p className="hero-description">
@@ -40,17 +40,19 @@ export default function HomePage() {
 
         </p>
 
-        <img src="/images/image1.png" alt="Description of image" className="profile-image"></img>  
-
         <p className="hero-description ">
           I train for endurance events and my weekends are spent with BeachPlease
 
         </p>
 
         <p className="hero-description">
-          I also like to eat various cuisines, i dont descriminate b/w street food and michelin star course meal (not that ive had one yet, lol)
+          I also like to eat various cuisines, I dont descriminate b/w street food and michelin star course meal (not that ive had one yet, lol)
 
         </p>
+
+        <img src="/images/image1.png" alt="Description of image" className="profile-image"></img>  
+
+        
 
         
       </section>

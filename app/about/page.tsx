@@ -9,7 +9,7 @@ export default function AboutPage() {
         </p>
 
         <h1>
-          A little more context.
+          Sneak peek into my life
         </h1>
 
       </header>
@@ -31,7 +31,7 @@ export default function AboutPage() {
           playsInline
           width="100%" 
           src="/videos/video4.mov" 
-          className="video"
+          className="profile-image"
         >
           Your browser does not support the video tag.
         </video>   

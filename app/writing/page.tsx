@@ -29,8 +29,7 @@ export default function WritingPage() {
         </p>
 
         <h1>
-          Things I've learned,
-          built and thought about.
+          Things I've learned and thought about.
         </h1>
 
       </header>
